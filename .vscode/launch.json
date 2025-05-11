@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Django: Runserver",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/chat/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Django: Shell",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/chat/manage.py",
+            "args": [
+                "shell"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Django: Test",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/chat/manage.py",
+            "args": [
+                "test",
+                "${input:testName}"
+            ],
+            "django": true,
+            "justMyCode": true
+        }
+    ],
+    "inputs": [
+        {
+            "id": "testName",
+            "type": "promptString",
+            "description": "Test name pattern",
+            "default": ""
+        }
+    ]
+}
